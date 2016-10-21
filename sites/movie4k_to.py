@@ -411,7 +411,7 @@ def __parseMovieSimpleList(sUrl, iPage, oGui, sHtmlContent = False):
             
             type, id = getTypeAndID(newUrl)
             if type == 'tvshow':
-                if sUrl.find(URL_SERIES_TOP) != -1:
+                if sUrl.find(URL_SERIES) != -1:
                     oGuiElement.setFunction('showHostersSeries')
                 elif sUrl.find('tvshows-') != -1:
                     oOutputParameterHandler.setParam('sLanguageToken',sLanguageToken)
